@@ -1,4 +1,4 @@
-import AdminStudents from "./pages/AdminStudents";
+
 import { Routes, Route } from "react-router-dom";
 
 import Home from "./Home";
@@ -13,14 +13,6 @@ import AdminStudents from "./pages/AdminStudents";
 function App() {
     return (
         <Routes>
-            <Route
-    path="/admin-students"
-    element={<AdminStudents />}
-/>
-<Route
-    path="/admin-students"
-    element={<AdminStudents />}
-/>
             <Route path="/" element={<Home />} />
 
             <Route path="/login" element={<Login />} />
@@ -41,6 +33,12 @@ function App() {
             {/* Job Management */}
             <Route path="/find-jobs" element={<FindJobs />} />
             <Route path="/post-job" element={<PostJob />} />
+
+            {/* Admin Students */}
+            <Route
+                path="/admin-students"
+                element={<AdminStudents />}
+            />
         </Routes>
     );
 }
